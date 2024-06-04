@@ -7,3 +7,14 @@
 .bigger-font-size {
     font-size: 24px;
 }
+
+#number2 {
+    color: rgb(0, 0, 255);
+    font-size: 36px;
+}
+
+#number4 {
+    background-color: hsl(120, 100%, 75%);
+    font-size: 24px;
+    font-weight: bold;
+}
