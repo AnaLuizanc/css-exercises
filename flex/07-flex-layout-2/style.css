@@ -11,7 +11,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 li {
@@ -20,34 +19,48 @@ li {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 .header {
-  height: 72px;
   background: darkmagenta;
   color: white;
-  padding-left: 15px;
+  padding: 0px 15px;
   font-weight: bold;
   font-size: 30px;
   align-content: center;
 }
 
 .content {
+  flex: 1;
   display: flex;
-  flex: 2;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 15px;
+}
+
+.sidebar li {
+  padding: 10px 0px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 23px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 300px;
+  padding: 10px;
 }  
   
 .footer {
